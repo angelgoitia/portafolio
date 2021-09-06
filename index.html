@@ -92,7 +92,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nombre:</strong> <span>Angel Rafael</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha Nacimiento:</strong> <span>4 Octubre 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha Nacimiento:</strong> <span>4 de Octubre de 1995</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>Venezolano</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Estado Civil:</strong> <span>Soltero</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Lugar de Nacimiento:</strong> <span>Caracas, Venezuela</span></li>
@@ -102,7 +102,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Apellido:</strong> <span>Goitia Guardia</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>25 años</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span class="showAge">25 años</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>C.I:</strong> <span>23.692.076</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>+58 412 985 1722</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Dirección:</strong> <span>Av. Panteón, Esq. San Narciso a santa Inés casa 48-1</span></li>
@@ -118,8 +118,8 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nombre:</strong> <span>Angel Rafael</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Apellido:</strong> <span>Goitia Guardia</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha Nacimiento:</strong> <span>4 Octubre 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>25 años</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha Nacimiento:</strong> <span>4 de Octubre de 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span class="showAge">25 años</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidad:</strong> <span>Venezolano</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>C.I:</strong> <span>23.692.076</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Estado Civil:</strong> <span>Soltero</span></li>
@@ -452,6 +452,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- jquery -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- calculate Age -->
+  <script>
+    _calculateAge();
+
+    function _calculateAge() {
+      var birthday = new Date(1995, 10, 4)
+      var diff_ms = Date.now() - birthday.getTime();
+      var age_dt = new Date(diff_ms); 
+      var age = age_dt.getUTCFullYear() - 1970;
+      $(".showAge").text(age + ' Años');
+      
+    }
+  </script>
 
 </body>
 
