@@ -767,7 +767,7 @@ section {
   content: "/";
 }
 
-.height-page{height: 200px;}
+.height-page{height: 200px !important;}
 
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
@@ -780,7 +780,7 @@ section {
     display: inline-block;
   }
 
-  .height-page{height: 100%}
+  .height-page{height: 100% !important;}
 }
 
 /*--------------------------------------------------------------
