@@ -494,12 +494,20 @@ section {
   bottom: -135px;
 }
 
-.skills .skills-wrap .project-ctlleva{
+.skills .skills-wrap .project-ctlleva, .skills .skills-wrap .project-ctparkea{
   bottom: -110px;
 }
 
-.skills .skills-wrap .project-ctpaga{
+.skills .skills-wrap .project-ctpaga, .skills .skills-wrap .project-azucena, .skills .skills-wrap .project-mutarelife{
   bottom: -130px;
+}
+
+.skills .skills-wrap .project-ctbeca{
+  bottom: -58px;
+}
+
+.skills .skills-wrap .project-lowcost{
+  bottom: -115px;
 }
 
 .skills .skills-wrap .skills-links a {
