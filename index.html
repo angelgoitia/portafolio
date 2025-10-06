@@ -20,7 +20,7 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="assets/vendor/bootstrap-icons/font/bootstrap-icons.css?v=3" rel="stylesheet"/>
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
@@ -40,13 +40,13 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile.jpeg?v=2" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profile.jpg?v=2" alt="Profile" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Angel Goitia</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.facebook.com/angel.goitia" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://www.instagram.com/angelgoitia/" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="www.linkedin.com/in/AngelGoitia" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <!-- <a href="https://github.com/angelgoitia/" class="github"><i class="bx bxl-github"></i></a> -->
+          <a href="assets/files/Sintesis Curricular Angel Nuevo.pdf" download="Sintesis_Curricular_Angel_Nuevo.pdf" class="cv-download"><i class="bi bi-download"></i></a>
         </div>
       </div>
 
@@ -55,8 +55,9 @@
           <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
           <li><a href="#Profile" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Perfil</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>habilidades</span></a></li>
-          <li><a href="#projects" class="nav-link scrollto"><i class="bi bi-terminal"></i> <span> Proyectos</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-lightbulb"></i> <span>Conocimientos</span></a></li>
+          <li><a href="#projects" class="nav-link scrollto"><i class="bi bi-terminal"></i> <span> Proyectos Web</span></a></li>
+          <li><a href="#projectsAPP" class="nav-link scrollto"><i class="bi bi-phone"></i> <span> Proyectos APP</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -84,7 +85,7 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile.jpeg?v=2" class="img-fluid" alt="" max>
+            <img src="assets/img/profile.jpg?v=2" class="img-fluid" alt="Profile">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content d-none d-md-block d-lg-block" data-aos="fade-left">
             <h3>Datos Personales.</h3>
@@ -174,8 +175,16 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Experiencia Laboral</h3>
             <div class="resume-item">
+              <h4>Santiago Cirone</h4>
+              <h5>01/09/2025 - 30/09/2025</h5>
+              <ul>
+                <li>Desarrollo de Web Scraping con Python.</li>
+                <li>Diseñar interfaz de usuario con ReactJS.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
               <h4>Ximena Sureda - Mutare Life</h4>
-              <h5>04/10/2021 - Actualidad</h5>
+              <h5>04/10/2021 - 30/08/2025</h5>
               <ul>
                 <li>Mejora de proyecto.</li>
                 <li>Integración de nuevo requerimientos.</li>
@@ -194,9 +203,9 @@
             </div>
             <div class="resume-item">
               <h4>Robed Jules - Compralotodo Venezuela XXI</h4>
-              <h5>15/02/2022 - 31/08/2023</h5>
+              <h5>15/02/2022 - 30/08/2025</h5>
               <ul>
-                <li>Desarrollo de una sistema de gestión entre mensajería de Texto, Página Web y App para el manejo de su empresa de Valet Parking y estacionamiento.</li>
+                <li>Desarrollo de un sistema de gestión entre mensajería de Texto, Página Web y App para el manejo de su empresa de Valet Parking y estacionamiento.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -218,7 +227,7 @@
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Comercializadora MultiSport.C.A. Rif: J-411277320 </h4>
+              <h4>Comercializadora MultiSport.C.A.</h4>
               <h5>15/10/2018 hasta 30/08/2019</h5>
               <ul>
                 <li>Asistente de Programador.</li>
@@ -251,66 +260,86 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Habilidades</h2>
-          <p>Conocimientos Básicos</p>
+          <h2>Conocimientos</h2>
         </div>
 
-        <div class="row skills-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <h3><i class="bi bi-code-slash"></i> Lenguajes de Programación</h3>
+            <ul>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>Dart</li>
+              <li>Ruby</li>
+              <li>Python</li>
+            </ul>
 
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/skills/html.png" class="img-fluid" alt="">
-            </div>
+            <h3><i class="bi bi-gear"></i> Entornos de Ejecución</h3>
+            <ul>
+              <li>Node.js</li>
+            </ul>
+
+            <h3><i class="bi bi-braces"></i> Frameworks</h3>
+            <ul>
+              <li>Laravel</li>
+              <li>CodeIgniter</li>
+              <li>Flutter</li>
+              <li>Bootstrap</li>
+              <li>Rails</li>
+            </ul>
+
+            <h3><i class="bi bi-database"></i> Bases de Datos</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>SQLite</li>
+            </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/skills/css.png" class="img-fluid" alt="">
-            </div>
-          </div>
+          <div class="col-lg-6">
 
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/skills/js.png" class="img-fluid" alt="">
-            </div>
-          </div>
+            <h3><i class="bi bi-tools"></i> Otras Herramientas</h3>
+            <ul>
+              <li>jQuery</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>ReactJS</li>
+              <li>Angular</li>
+            </ul>
 
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/skills/laravel.png" class="img-fluid" alt="">
-            </div>
-          </div>
+            <h3><i class="bi bi-robot"></i> Inteligencia Artificial</h3>
+            <ul>
+              <li>GitHub Copilot</li>
+              <li>Microsoft Copilot</li>
+              <li>Gemini</li>
+              <li>ChatGPT</li>
+              <li>Kilocode</li>
+              <li>Claude Code</li>
+            </ul>
 
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/skills/bootstrap.png" class="img-fluid" alt="">
-            </div>
+            <h3><i class="bi bi-gear-wide-connected"></i> Control de Versiones y Optimización</h3>
+            <ul>
+              <li>Git</li>
+              <li>Herramientas de Rendimiento Web (ej. Google PageSpeed Insights, Lighthouse, Chrome DevTools)</li>
+            </ul>
           </div>
-
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/skills/flutter.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
         </div>
 
       </div>
     </section><!-- End skills Section -->
-
 
     <!-- ======= Projects Section ======= -->
     <section id="projects" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Proyectos</h2>
+          <h2>Proyectos Web</h2>
         </div>
 
         <div class="row skills-container" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-4 col-md-6 skills-item filter-app">
             <div class="skills-wrap">
-              <img src="assets/img/projects/mutarelife.jpg?v=2" class="img-fluid height-page" alt="" width="100%" height="200px">
+              <img src="assets/img/projects/mutarelife.jpg?v=3" class="img-fluid height-page" alt="Mutare Life" width="100%" height="200px">
               <div class="skills-links project-mutarelife">
                 <p class="skills-title"><strong>Mutare Life</strong></p>
                 <p class="skills-detaills">Una plataforma online de profesionales que te guiarán hacia una mejor calidad de vida.</p>
@@ -320,7 +349,17 @@
           </div>
           <div class="col-lg-4 col-md-6 skills-item filter-app">
             <div class="skills-wrap">
-              <img src="assets/img/projects/lowcost_page.jpg?v=2" class="img-fluid height-page" alt="" width="100%" height="200px">
+              <img src="assets/img/projects/lowcost_page.jpg?v=3" class="img-fluid height-page" alt="Ctparkea" width="100%" height="200px">
+              <div class="skills-links project-lowcost">
+                <p class="skills-title"><strong>Ctparkea</strong></p>
+                <p class="skills-detaills">Control de Valet Parking y estacionamiento.</p>
+                <a href="https://ctparkea.com" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/ctparkea-web.png" class="img-fluid height-page" alt="LowCost" width="100%" height="200px">
               <div class="skills-links project-lowcost">
                 <p class="skills-title"><strong>LowCost</strong></p>
                 <p class="skills-detaills">Busca las mejores ofertas y promociones aéreas en un solo lugar.</p>
@@ -330,7 +369,7 @@
           </div>
           <div class="col-lg-4 col-md-6 skills-item filter-app">
             <div class="skills-wrap">
-              <img src="assets/img/projects/azucena.jpg?v=2" class="img-fluid height-page" alt="" width="100%" height="200px">
+              <img src="assets/img/projects/azucena.jpg?v=3" class="img-fluid height-page" alt="Azucena's Store" width="100%" height="200px">
               <div class="skills-links project-azucena">
                 <p class="skills-title"><strong>Azucena'S Store</strong></p>
                 <p class="skills-detaills">Tienda online con carrito de compra que permite enviar la lista de productos seleccionado por whatsapp al comerciante.</p>
@@ -338,73 +377,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/projects/ctparkea.jpg?v=2" class="img-fluid" alt="" width="100%">
-              <div class="skills-links project-ctparkea">
-                <p class="skills-title"><strong>CTparkea</strong></p>
-                <p class="skills-detaills">Control de Valet Parking y estacionamiento.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.ctparkea.employee&hl=es" title="link" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/projects/ctbeca.png?v=2" class="img-fluid" alt="" width="100%">
-              <div class="skills-links project-ctbeca">
-                <p class="skills-title"><strong>CTBeca</strong></p>
-                <p class="skills-detaills">Control de los becados de Axies Infinity.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.compralotodo.ctbeca&hl=es" title="link" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/projects/ctpaga.jpg?v=2" class="img-fluid" alt="" width="100%">
-              <div class="skills-links project-ctpaga">
-                <p class="skills-title"><strong>Ctpaga</strong></p>
-                <p class="skills-detaills">Permite realizar venta de productos sin necesidad de tener gastos adicional para crear pagina web.</p>
-                <a href="https://play.google.com/store/apps/details?id=compralotodo.ctpaga" title="link" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
 
           <div class="col-lg-4 col-md-6 skills-item filter-app">
             <div class="skills-wrap">
-              <img src="assets/img/projects/ctlleva.jpg?v=2" class="img-fluid" alt="" width="100%">
-              <div class="skills-links project-ctlleva">
-                <p class="skills-title"><strong>Ctlleva</strong></p>
-                <p class="skills-detaills">Entrega los productos en cualquier lugar donde estés.</p>
-                <a href="https://play.google.com/store/apps/details?id=ctlleva.ctlleva" title="link" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/projects/chatworld.jpg?v=2" class="img-fluid" alt="" width="100%">
-              <div class="skills-links project-chatworld">
-                <p class="skills-title"><strong>Proyecto Personal</strong></p>
-                <p class="skills-detaills">Chat Mundial con traducción en la cual permite conversar con persona de otro idioma y conocer sus cultura</p>
-                <a href="https://drive.google.com/file/d/1NIT51Lw3Celejb7FqnrOwz2gAPgzRy_5/view?usp=sharing" title="link" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/projects/lsv.jpg?v=2" class="img-fluid" alt="" width="100%">
-              <div class="skills-links project-lsv">
-                <p class="skills-title"><strong>Proyecto Universidad (TESIS)</strong></p>
-                <p class="skills-detaills">Sistema multiplataforma de aplicación móvil para el aprendizaje del lenguaje de señas dirigido a los niños, niñas y adolescentes con deficiencias auditivas y del habla del Instituto de Fonoaudiología Juan Pablo Bonet “Fe y Alegría”</p>
-                <a href="https://drive.google.com/file/d/1iUBPypTv0fSsAGnmM17uMSOkgYWkrVR6/view?usp=drivesdk" title="link" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 skills-item filter-app">
-            <div class="skills-wrap">
-              <img src="assets/img/projects/magazine.jpg?v=2" class="img-fluid" alt="">
+              <img src="assets/img/projects/magazine.jpg?v=3" class="img-fluid" alt="Revista interactiva">
               <div class="skills-links">
                 <p class="skills-title"><strong>Revista Interactiva</strong></p>
                 <p class="skills-detaills">Desde la pagina 29 hasta 36.</p>
@@ -415,7 +391,7 @@
 
           <div class="col-lg-4 col-md-6 skills-item filter-app">
             <div class="skills-wrap">
-              <img src="assets/img/projects/asked.jpg?v=2" class="img-fluid" alt="">
+              <img src="assets/img/projects/asked.jpg?v=3" class="img-fluid" alt="Juego preguntados">
               <p class="skills-detaills">
                 <strong>Juegos Preguntados</strong> <br>
                 Juegos de preguntas relacionados con Estados de Venezuela
@@ -423,6 +399,93 @@
             </div>
           </div>
 
+        </div>
+
+      </div>
+    </section><!-- End skills Section -->
+
+    <!-- ======= Projects Section ======= -->
+    <section id="projectsApp" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Proyectos APP</h2>
+        </div>
+
+        <div class="row skills-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/mutarelife-app.png?v=3" class="img-fluid" alt="Mutare Life" width="100%">
+              <div class="skills-links project-mutarelife">
+                <p class="skills-title"><strong>Mutare Life</strong></p>
+                <p class="skills-detaills">Una plataforma online de profesionales que te guiarán hacia una mejor calidad de vida.</p>
+                <a href="https://apps.apple.com/us/app/mutare-life/id6471258398?l=es-MX&platform=iphone" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/ctparkea.jpg?v=3" class="img-fluid" alt="CTparkea" width="100%">
+              <div class="skills-links project-ctparkea">
+                <p class="skills-title"><strong>CTparkea</strong></p>
+                <p class="skills-detaills">Control de Valet Parking y estacionamiento.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.ctparkea.employee&hl=es" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/ctbeca.png?v=3" class="img-fluid" alt="CTBeca" width="100%">
+              <div class="skills-links project-ctbeca">
+                <p class="skills-title"><strong>CTBeca</strong></p>
+                <p class="skills-detaills">Control de los becados de Axies Infinity.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.compralotodo.ctbeca&hl=es" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/ctpaga.jpg?v=3" class="img-fluid" alt="Ctpaga" width="100%">
+              <div class="skills-links project-ctpaga">
+                <p class="skills-title"><strong>Ctpaga</strong></p>
+                <p class="skills-detaills">Permite realizar venta de productos sin necesidad de tener gastos adicional para crear pagina web.</p>
+                <a href="https://play.google.com/store/apps/details?id=compralotodo.ctpaga" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/ctlleva.jpg?v=3" class="img-fluid" alt="Ctlleva" width="100%">
+              <div class="skills-links project-ctlleva">
+                <p class="skills-title"><strong>Ctlleva</strong></p>
+                <p class="skills-detaills">Entrega los productos en cualquier lugar donde estés.</p>
+                <a href="https://play.google.com/store/apps/details?id=ctlleva.ctlleva" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/chatworld.jpg?v=3" class="img-fluid" alt="Chat World" width="100%">
+              <div class="skills-links project-chatworld">
+                <p class="skills-title"><strong>Proyecto Personal</strong></p>
+                <p class="skills-detaills">Chat Mundial con traducción en la cual permite conversar con persona de otro idioma y conocer sus cultura</p>
+                <a href="https://drive.google.com/file/d/1NIT51Lw3Celejb7FqnrOwz2gAPgzRy_5/view?usp=sharing" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 skills-item filter-app">
+            <div class="skills-wrap">
+              <img src="assets/img/projects/lsv.jpg?v=3" class="img-fluid" alt="Lenguaje de Señas Venezolano" width="100%">
+              <div class="skills-links project-lsv">
+                <p class="skills-title"><strong>Proyecto Universidad (TESIS)</strong></p>
+                <p class="skills-detaills">Sistema multiplataforma de aplicación móvil para el aprendizaje del lenguaje de señas dirigido a los niños, niñas y adolescentes con deficiencias auditivas y del habla del Instituto de Fonoaudiología Juan Pablo Bonet “Fe y Alegría”</p>
+                <a href="https://drive.google.com/file/d/1iUBPypTv0fSsAGnmM17uMSOkgYWkrVR6/view?usp=drivesdk" title="link" target="_blank"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -452,17 +515,17 @@
                 <p>+58 412 985 1722</p>
               </div>
 
-              <div class="contact-social">
-                <i class="bi bi-facebook"></i>
-                <h4>Facebook:</h4>
-                <p><a href="https://www.facebook.com/angel.goitia">https://www.facebook.com/angel.goitia</a></p>
-              </div>
-
             </div>
           </div>
 
           <div class="col" >
             <div class="info">
+
+              <div class="contact-social">
+                <i class="bi bi-facebook"></i>
+                <h4>Facebook:</h4>
+                <p><a href="https://www.facebook.com/angel.goitia">https://www.facebook.com/angel.goitia</a></p>
+              </div>
                 
               <div class="contact-social">
                 <i class="bi bi-instagram"></i>
@@ -475,12 +538,6 @@
                 <h4>Linkedin:</h4>
                 <p><a href="www.linkedin.com/in/AngelGoitia">www.linkedin.com/in/AngelGoitia</a></p>
               </div>
-
-              <!-- <div class="contact-social">
-                <i class="bi bi-github"></i>
-                <h4>Github:</h4>
-                <p><a href="https://github.com/angelgoitia/">https://github.com/angelgoitia/</a></p>
-              </div> -->
 
             </div>
 
@@ -517,12 +574,14 @@
     _calculateAge();
 
     function _calculateAge() {
-      var birthday = new Date(1995, 10, 4)
-      var diff_ms = Date.now() - birthday.getTime();
-      var age_dt = new Date(diff_ms); 
-      var age = age_dt.getUTCFullYear() - 1970;
-      $(".showAge").text(age + ' Años');
-      
+      var birthday = new Date(1995, 9, 4); // 9 = October
+      var today = new Date();
+      var age = today.getFullYear() - birthday.getFullYear();
+      var monthDiff = today.getMonth() - birthday.getMonth();
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
+        age--;
+      }
+      $(".showAge").text(age + ' años');
     }
   </script>
 
